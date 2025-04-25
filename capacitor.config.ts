@@ -10,14 +10,18 @@ const config: CapacitorConfig = {
     cleartext: true
   },
   plugins: {
-    // Configuration for AdMob will go here when the plugin is working
-    // For example:
-    /*
-    "AdMob": {
-      "appIdAndroid": "ca-app-pub-3940256099942544~3347511713",
-      "appIdIOS": "ca-app-pub-3940256099942544~1458002511"
+    // AdMob configuration with test ad IDs
+    // Replace these with your real ad IDs before publishing to production
+    AdMob: {
+      appIdAndroid: 'ca-app-pub-3940256099942544~3347511713', // Test app ID
+      appIdIOS: 'ca-app-pub-3940256099942544~1458002511', // Test app ID
+      bannerAdIdAndroid: 'ca-app-pub-3940256099942544/6300978111', // Test banner ID
+      bannerAdIdIOS: 'ca-app-pub-3940256099942544/2934735716', // Test banner ID
+      interstitialAdIdAndroid: 'ca-app-pub-3940256099942544/1033173712', // Test interstitial ID
+      interstitialAdIdIOS: 'ca-app-pub-3940256099942544/4411468910', // Test interstitial ID
+      nativeAdIdAndroid: 'ca-app-pub-3940256099942544/2247696110', // Test native ID
+      nativeAdIdIOS: 'ca-app-pub-3940256099942544/3986624511' // Test native ID
     }
-    */
   }
 };
 
