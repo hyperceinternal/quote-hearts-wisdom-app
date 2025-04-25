@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
 import SplashScreen from "../components/SplashScreen";
 import Home from "./Home";
 
@@ -12,13 +11,13 @@ const Index = () => {
   };
 
   return (
-    <Router>
+    <>
       {showSplash ? (
         <SplashScreen onComplete={handleSplashComplete} />
       ) : (
         <Home />
       )}
-    </Router>
+    </>
   );
 };
 
